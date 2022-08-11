@@ -1,21 +1,23 @@
 body {
  margin: 0;
-
+ padding: 0;
+ background-image: url(../imgs/BGs/manga.jpg);
 }
 
 .topbanner {
     padding: 15px;
-    justify-content: space-evenly;
+    justify-content: baseline;
     display: grid;
     grid-template-areas: 
         'a b c';
-    background-color: #66725B;
+    background-color: #66725bca;
     height: 100px;
     align-items: center;
+    overflow-x: auto;
 }
 
 .logo {
-    margin-inline: 15px;
+    margin-right: 10px;
     grid-area: a;
     height: 100px;
     width: 100px;    
@@ -27,20 +29,24 @@ body {
                 width: 100px;
             }
 
-.topnav {
-    justify-content: space-evenly;
+
+.menu {
+    justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
     grid-area: b;
-    ;
 }
 
 
-
-    .topnav li {
-        align-content: center;
+    .menu li {
+        font-weight: bold;
+        font-size: larger;
+        
+        width: 25%;
+        padding: 10px;
+        text-align: center;
         background-color: #565A65;
         border-radius: 5px;
         padding-inline: 10px;
@@ -50,28 +56,130 @@ body {
     a:hover, a:visited, a:link, a:active {
         text-decoration: none;
         color:white;
-        font-size: small;
+        font-size: medium;
 
     }
 
 .User {
     justify-content:center;
     display: flex;
-    
     grid-area: c;
     
 }
 .Login, .Register {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: #363C2E;
     margin-inline: 2px;
-    border: #363C2E solid 2px;
+    border: #66725be6 solid 2px;
     border-radius: 5px;
-    padding-bottom: 2px;
-    height: 20px;
-    width: 96px;
+    padding: 10px;
+    height: auto;
+    min-width: min-content;
    }
-   
+.jumbo {
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
 
-@media screen and (max-width: 620px){
+}
+.slogan {
+
+    margin-top: 20px;
+    font-size: larger;
+    text-shadow: 2px 2px black  ;
+    padding: 20px 35px ;
+    min-width: max-content;
+    background-color: #66725be6;
+    border-radius: 25px;
+    color:white;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+   
+    
+}
+.catalogo {
+    background-color: #66725be6;
+    margin: 20px auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border-radius: 25px;
+    gap: 1%;   
+}
+.Slider {
+    
+    border:#363C2E 2px solid;
+    border-radius: 10px;
+    margin-block: 5px;
+    width: 150px;
+    height: 200px;
+    background-color: palevioletred;
+    
+}
+
+.titulo {
+    text-align: center;
+    background-color:white;
+    opacity: .7;
+    color: #000000;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 5px;
+   
+}
+
+.Vestimenta {
+    animation:slideV 21s infinite;
+    background: url(../imgs/Productos/Vestimenta/Img1.jpg);
+}
+
+@keyframes slideV {
+
+    33%{background: url(../imgs/Productos/Vestimenta/Img2.jpg);
+}
+    66%{background: url(../imgs/Productos/Vestimenta/Img3.jpg);
+}
+    100%{background: url(../imgs/Productos/Vestimenta/Img1.jpg);
+}
+}
+
+.Cuadros {
+    animation:slideC 21s infinite;
+    background: url(../imgs/Productos/Cuadros/Img1.jpg);
+}
+
+@keyframes slideC {
+
+    33%{background: url(../imgs/Productos/Cuadros/img2.jpg);
+}
+    66%{background: url(../imgs/Productos/Cuadros/img3.jpg);
+}
+    100%{background: url(../imgs/Productos/Cuadros/Img1.jpg);
+}
+}
+.Accesorios {
+    animation:slideA 21s infinite;
+    background: url(../imgs/Productos/Accesorios/img1.jpg)}
+
+@keyframes slideA {
+
+    33%{background: url(../imgs/Productos/Accesorios/img2.jpg);
+}
+    66%{background: url(../imgs/Productos/Accesorios/img3.jpg);
+}
+    100%{background: url(../imgs/Productos/Accesorios/img1.jpg);
+}
+}
+
+
+
+@media screen and (max-width: 660px){
     .topbanner {
         grid-template-areas: 'a b b d'
                             'a c c d'  ;
