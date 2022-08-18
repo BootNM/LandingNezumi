@@ -1,23 +1,31 @@
 body {
- margin: 0;
- padding: 0;
- background-image: url(../imgs/BGs/manga.jpg);
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+min-height: max-content;
+background-color: #565a6546 ;
+background-image: url(/imgs/BGs/BG1.jpg), url(/imgs/BGs/BG2.jpg), url(/imgs/BGs/BG3.jpg), url(/imgs/BGs/BG1.jpg), url(/imgs/BGs/BG2.jpg);
+background-position:  0% 0%, 0% 23%, 0% 50%, 0% 75%, 0% 100%;
+background-size: 100%, 100%, 100%, 100%, 100%;
+background-repeat: no-repeat , no-repeat , no-repeat, no-repeat, no-repeat, no-repeat;
+background-attachment: scroll;
+
+
 }
 
 .topbanner {
-    padding: 15px;
-    justify-content: baseline;
+    padding: 1% 2% 2% 1%;
     display: grid;
     grid-template-areas: 
         'a b c';
-    background-color: #66725bca;
-    height: 100px;
+    background-color: #565a65ac ;
+    height: min-content;
     align-items: center;
     overflow-x: auto;
 }
 
 .logo {
-    margin-right: 10px;
+    margin: 10px 10px 10px 10px;
     grid-area: a;
     height: 100px;
     width: 100px;    
@@ -31,23 +39,22 @@ body {
 
 
 .menu {
-    justify-content: space-between;
+    justify-content: center;
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     grid-area: b;
 }
 
 
     .menu li {
-        font-weight: bold;
-        font-size: larger;
-        
-        width: 25%;
+        font-weight: thin;
+        font-size: small;
         padding: 10px;
         text-align: center;
-        background-color: #565A65;
+        background-color: #363C2E;
         border-radius: 5px;
         padding-inline: 10px;
         margin: 2px;
@@ -56,19 +63,20 @@ body {
     a:hover, a:visited, a:link, a:active {
         text-decoration: none;
         color:white;
-        font-size: medium;
+        font-size: small;
 
     }
 
 .User {
-    justify-content:center;
+    justify-content:start;
     display: flex;
     grid-area: c;
     
 }
 .Login, .Register {
+    font-size: medium;
     text-align: center;
-    font-weight: bold;
+    font-weight: bolder;
     color: white;
     background-color: #363C2E;
     margin-inline: 2px;
@@ -78,106 +86,178 @@ body {
     height: auto;
     min-width: min-content;
    }
+
 .jumbo {
-    
-    
+    margin-inline: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center
 
 }
+
 .slogan {
 
-    margin-top: 20px;
+    margin-inline: 2%;
+    margin-block: 10%;
     font-size: larger;
-    text-shadow: 2px 2px black  ;
-    padding: 20px 35px ;
-    min-width: max-content;
-    background-color: #66725be6;
-    border-radius: 25px;
+    text-shadow: 3px 3px 3px#1f2318  ;
+    padding: 1rem 5% 1rem 5% ;
+    min-width: fit-content;
+    background-color: #565a65ac;
+    border-radius: 30px;
     color:white;
     flex-direction: column;
     text-align: center;
     letter-spacing: 1px;
     word-spacing: 2px;
-   
-    
-}
-.catalogo {
-    background-color: #66725be6;
-    margin: 20px auto;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    border-radius: 25px;
-    gap: 1%;   
-}
-.Slider {
-    
-    border:#363C2E 2px solid;
-    border-radius: 10px;
-    margin-block: 5px;
-    width: 150px;
-    height: 200px;
-    background-color: palevioletred;
-    
+      
 }
 
-.titulo {
+.catalogo {
+    margin-inline: 2%;
+ 
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    background-color: #565a65ac;
+    width: 100%;
+    align-items: center;
+    border-radius: 25px;
+    gap: 10px;
+    flex-direction: column;   
+}
+
+.Slider {
+    border:#363C2E 2px solid;
+    border-radius: 10px;
+    margin: 5px 2px 5px 2px;
+    width: 85vw;
+    height: 60vh;
+    background-color: palevioletred;
+}
+
+.tituloSlider {
     text-align: center;
     background-color:white;
     opacity: .7;
     color: #000000;
     font-weight: bold;
-    font-size: large;
+    font-size: xx-large;
     margin-top: 5px;
    
 }
 
 .Vestimenta {
-    animation:slideV 21s infinite;
-    background: url(../imgs/Productos/Vestimenta/Img1.jpg);
+    animation:slideV 21s infinite ;
+    background: no-repeat center/cover url(../imgs/Productos/Vestimenta/Img1.jpg);
 }
 
 @keyframes slideV {
 
-    33%{background: url(../imgs/Productos/Vestimenta/Img2.jpg);
+    33%{background: no-repeat center/cover url(../imgs/Productos/Vestimenta/Img2.jpg);
 }
-    66%{background: url(../imgs/Productos/Vestimenta/Img3.jpg);
+    66%{background: no-repeat center/cover url(../imgs/Productos/Vestimenta/Img3.jpg);
 }
-    100%{background: url(../imgs/Productos/Vestimenta/Img1.jpg);
+    100%{background: no-repeat center/cover url(../imgs/Productos/Vestimenta/Img1.jpg) ;
 }
 }
 
 .Cuadros {
     animation:slideC 21s infinite;
-    background: url(../imgs/Productos/Cuadros/Img1.jpg);
+    background: no-repeat center/cover url(../imgs/Productos/Cuadros/Img1.jpg);
 }
 
 @keyframes slideC {
 
-    33%{background: url(../imgs/Productos/Cuadros/img2.jpg);
+    33%{background: no-repeat center/cover url(../imgs/Productos/Cuadros/img2.jpg);
 }
-    66%{background: url(../imgs/Productos/Cuadros/img3.jpg);
+    66%{background: no-repeat center/cover url(../imgs/Productos/Cuadros/img3.jpg);
 }
-    100%{background: url(../imgs/Productos/Cuadros/Img1.jpg);
+    100%{background: no-repeat center/cover url(../imgs/Productos/Cuadros/Img1.jpg);
 }
 }
 .Accesorios {
     animation:slideA 21s infinite;
-    background: url(../imgs/Productos/Accesorios/img1.jpg)}
+    background: no-repeat center/cover url(../imgs/Productos/Accesorios/img1.jpg)}
 
 @keyframes slideA {
 
-    33%{background: url(../imgs/Productos/Accesorios/img2.jpg);
+    33%{background: no-repeat center/cover url(../imgs/Productos/Accesorios/img2.jpg);
 }
-    66%{background: url(../imgs/Productos/Accesorios/img3.jpg);
+    66%{background: no-repeat center/cover url(../imgs/Productos/Accesorios/img3.jpg);
 }
-    100%{background: url(../imgs/Productos/Accesorios/img1.jpg);
+    100%{background: no-repeat center/cover url(../imgs/Productos/Accesorios/img1.jpg);
 }
 }
 
+.blog {
+    display:flex; 
+    flex-direction: column;
+    border-radius: 5%;
+   margin-inline: 2%;
+    margin-block: 2%;
+}
 
+.Cotizacion{
+    text-align: center;
+    font-size: large;
+    letter-spacing: 1px;
+    border-radius: 5%;
+    padding: 2% 10% 5% 5%;
+    background-color: #363c2ec8;
+    color: white;
+}
+.Cotizacion h2, pre {
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+.Cotizacion input, select {
+    margin: 10px 0 10px 0;
+}
+.btnCotiz {
+    font-size: large;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #363C2E;
+    background-color:white ;
+    border: #66725be6 solid 2px;
+    border-radius: 5px;
+    padding: 10px 50px 10px 50px;
+    height: auto;
+    min-width: min-content;
+
+
+}
+
+.concurso{
+    padding: 0 0 20px 0;
+    margin: 10px 0 10px 0;
+    background-color: #363c2ec8;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.tituloConcurso{
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    text-shadow: 3px 3px 3px#1f2318;
+}
+
+.fotoConcurso {
+    
+    width: 75vw;
+    border: 5px red ridge;
+    background: no-repeat center/cover url(../imgs/Concurso/rifa.jpg);
+    height: 281px;
+    
+    
+      
+}
 
 @media screen and (max-width: 660px){
     .topbanner {
