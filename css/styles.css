@@ -18,7 +18,7 @@ background-attachment: scroll;
     display: grid;
     grid-template-areas: 
         'a b c';
-    background-color: #565a65ac ;
+    background-color: #565a65e2 ;
     height: min-content;
     align-items: center;
     overflow-x: auto;
@@ -40,7 +40,7 @@ background-attachment: scroll;
 
 .menu {
     justify-content: center;
-    margin: 0;
+    margin: 1rem 0 1rem 0;
     padding: 0;
     list-style: none;
     display: flex;
@@ -50,7 +50,7 @@ background-attachment: scroll;
 
 
     .menu li {
-        font-weight: thin;
+        font-weight: bold;
         font-size: small;
         padding: 10px;
         text-align: center;
@@ -69,6 +69,7 @@ background-attachment: scroll;
 
 .User {
     justify-content:start;
+    padding: 0 0 1rem 0;
     display: flex;
     grid-area: c;
     
@@ -103,7 +104,7 @@ background-attachment: scroll;
     text-shadow: 3px 3px 3px#1f2318  ;
     padding: 1rem 5% 1rem 5% ;
     min-width: fit-content;
-    background-color: #565a65ac;
+    background-color: #565a65d8;
     border-radius: 30px;
     color:white;
     flex-direction: column;
@@ -118,7 +119,7 @@ background-attachment: scroll;
  
     padding: 20px 10px 20px 10px;
     display: flex;
-    background-color: #565a65ac;
+    background-color: #565a65d8;
     width: 100%;
     align-items: center;
     border-radius: 25px;
@@ -206,7 +207,8 @@ background-attachment: scroll;
     background-color: #363c2ec8;
     color: white;
 }
-.Cotizacion h2, pre {
+.Cotizacion h2, p, pre {
+    text-shadow: 3px 3px 3px#1f2318;
     color: white;
     text-align: center;
     font-weight: bolder;
@@ -214,7 +216,16 @@ background-attachment: scroll;
 }
 .Cotizacion input, select {
     margin: 10px 0 10px 0;
+} 
+
+* select {
+color: #1f2318;
+font-size: large;
+font-weight: bold;
+height: 30px;
+text-align: center;
 }
+
 .btnCotiz {
     font-size: large;
     margin-top: 10px;
@@ -254,14 +265,79 @@ background-attachment: scroll;
     border: 5px red ridge;
     background: no-repeat center/cover url(../imgs/Concurso/rifa.jpg);
     height: 281px;
-    
-    
-      
+      }
+
+.footer {
+    padding: 1% 2% 2% 1%;
+    display: grid;
+    grid-template-areas: 
+        'a b c';
+    background-color: #565a65e2 ;
+    height: min-content;
+    align-items: center;
+    overflow-x: auto;
 }
+
+.botLogo {
+    margin: 10px 10px 10px 10px;
+    grid-area: a;
+    height: 100px;
+    width: 100px;    
+    
+}
+
+            #botLogo { 
+                height: 100px;
+                width: 100px;
+            }
+
+.rrss {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem 0 1rem;
+    grid-area: b;
+    gap: 10px;
+}
+
+.botMenu {
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: c;
+}
+
+
+    .botMenu li {
+        font-weight: normal;
+        font-size: small;
+        padding: 10px;
+        text-align: center;
+        background-color: #363C2E;
+        border-radius: 5px;
+        padding-inline: 10px;
+        margin: 2px;
+    }
+
+    a:hover, a:visited, a:link, a:active {
+        text-decoration: none;
+        color:white;
+        font-size: small;
+
+    }
+
+
+
 
 @media screen and (max-width: 660px){
     .topbanner {
         grid-template-areas: 'a b b d'
                             'a c c d'  ;
+    }
+    .footer {
+        grid-template-areas: 'a b c c'
+                            'a b c c'  ;
     }
 }
