@@ -18,14 +18,14 @@ background-attachment: scroll;
     display: grid;
     grid-template-areas: 
         'a b c';
-    background-color: #565a65e2 ;
+    background-color: #ffb0e2e0 ;
     height: min-content;
     align-items: center;
     overflow-x: auto;
 }
 
 .logo {
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10%;
     grid-area: a;
     height: 100px;
     width: 100px;    
@@ -54,7 +54,7 @@ background-attachment: scroll;
         font-size: small;
         padding: 10px;
         text-align: center;
-        background-color: #363C2E;
+        background-color:rgba(255, 255, 255, 0.669);
         border-radius: 5px;
         padding-inline: 10px;
         margin: 2px;
@@ -62,31 +62,33 @@ background-attachment: scroll;
 
     a:hover, a:visited, a:link, a:active {
         text-decoration: none;
-        color:white;
+        color:#66725B;
         font-size: small;
 
     }
 
 .User {
-    justify-content:start;
-    padding: 0 0 1rem 0;
+    justify-content:center;
     display: flex;
     grid-area: c;
+    
     
 }
 .Login, .Register {
     font-size: medium;
     text-align: center;
     font-weight: bolder;
-    color: white;
-    background-color: #363C2E;
+    color: rgb(255, 255, 255);
+    background-color: #66725baf;
     margin-inline: 2px;
-    border: #66725be6 solid 2px;
+    border: rgba(255, 255, 255, 0) none 2px;
     border-radius: 5px;
     padding: 10px;
     height: auto;
     min-width: min-content;
    }
+
+   
 
 .jumbo {
     margin-inline: 2%;
@@ -96,99 +98,98 @@ background-attachment: scroll;
 
 }
 
-.slogan {
+    .slogan {
 
-    margin-inline: 2%;
-    margin-block: 10%;
-    font-size: larger;
-    text-shadow: 3px 3px 3px#1f2318  ;
-    padding: 1rem 5% 1rem 5% ;
-    min-width: fit-content;
-    background-color: #565a65d8;
-    border-radius: 30px;
-    color:white;
-    flex-direction: column;
-    text-align: center;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-      
-}
+        margin: 2rem auto 2rem auto;
+        font-size: larger;
+        text-shadow: 3px 3px 3px#1f2318  ;
+        padding: 1rem 5% 1rem 5% ;
+        min-width: fit-content;
+        background-color: #565a65d8;
+        border-radius: 5%;
+        color:white;
+        flex-direction: column;
+        text-align: center;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        
+    }
 
-.catalogo {
-    margin-inline: 2%;
- 
-    padding: 20px 10px 20px 10px;
-    display: flex;
-    background-color: #565a65d8;
-    width: 100%;
-    align-items: center;
-    border-radius: 25px;
-    gap: 10px;
-    flex-direction: column;   
-}
+    .catalogo {
+        margin-inline: 2%;
+    
+        padding: 20px 10px 20px 10px;
+        display: flex;
+        background-color: #ffb0e2b5;
+        width: 100%;
+        align-items: center;
+        border-radius: 25px;
+        gap: 10px;
+        flex-direction: column;   
+    }
 
-.Slider {
-    border:#363C2E 2px solid;
-    border-radius: 10px;
-    margin: 5px 2px 5px 2px;
-    width: 85vw;
-    height: 60vh;
-    background-color: palevioletred;
-}
+    .Slider {
+        border:#363C2E 2px solid;
+        border-radius: 10px;
+        margin: 5px 2px 5px 2px;
+        width: 85vw;
+        height: 60vh;
+        
+    }
 
-.tituloSlider {
-    text-align: center;
-    background-color:white;
-    opacity: .7;
-    color: #000000;
-    font-weight: bold;
-    font-size: xx-large;
-    margin-top: 5px;
-   
-}
+    .tituloSlider {
+        text-align: center;
+        background-color:white;
+        opacity: .7;
+        color: #000000;
+        font-weight: bold;
+        font-size: xx-large;
+        margin-top: 5px;
+    
+    }
 
-.Vestimenta {
-    animation:slideV 21s infinite ;
-    background: no-repeat center/cover url(../imgs/Productos/Vestimenta/Img1.jpg);
-}
+        .Vestimenta {
+            animation:slideV 21s infinite ;
+            background: no-repeat center/cover url(../imgs/Productos/Vestimenta/Img1.jpg);
+        }
 
-@keyframes slideV {
+        @keyframes slideV {
 
-    33%{background: no-repeat center/cover url(../imgs/Productos/Vestimenta/Img2.jpg);
-}
-    66%{background: no-repeat center/cover url(../imgs/Productos/Vestimenta/Img3.jpg);
-}
-    100%{background: no-repeat center/cover url(../imgs/Productos/Vestimenta/Img1.jpg) ;
-}
-}
+            33%{background: no-repeat center/cover url(../imgs/Productos/Vestimenta/Img2.jpg);
+        }
+            66%{background: no-repeat center/cover url(../imgs/Productos/Vestimenta/Img3.jpg);
+        }
+            100%{background: no-repeat center/cover url(../imgs/Productos/Vestimenta/Img1.jpg) ;
+        }
+        }
 
-.Cuadros {
-    animation:slideC 21s infinite;
-    background: no-repeat center/cover url(../imgs/Productos/Cuadros/Img1.jpg);
-}
+        .Cuadros {
+            animation:slideC 21s infinite;
+            background: no-repeat center/cover url(../imgs/Productos/Cuadros/Img1.jpg);
+        }
 
-@keyframes slideC {
+        @keyframes slideC {
 
-    33%{background: no-repeat center/cover url(../imgs/Productos/Cuadros/img2.jpg);
-}
-    66%{background: no-repeat center/cover url(../imgs/Productos/Cuadros/img3.jpg);
-}
-    100%{background: no-repeat center/cover url(../imgs/Productos/Cuadros/Img1.jpg);
-}
-}
-.Accesorios {
-    animation:slideA 21s infinite;
-    background: no-repeat center/cover url(../imgs/Productos/Accesorios/img1.jpg)}
+            33%{background: no-repeat center/cover url(../imgs/Productos/Cuadros/img2.jpg);
+        }
+            66%{background: no-repeat center/cover url(../imgs/Productos/Cuadros/img3.jpg);
+        }
+            100%{background: no-repeat center/cover url(../imgs/Productos/Cuadros/Img1.jpg);
+        }
+        }
+        .Accesorios {
+            animation:slideA 21s infinite;
+            background: no-repeat center/cover url(../imgs/Productos/Accesorios/img1.jpg)}
 
-@keyframes slideA {
+        @keyframes slideA {
 
-    33%{background: no-repeat center/cover url(../imgs/Productos/Accesorios/img2.jpg);
-}
-    66%{background: no-repeat center/cover url(../imgs/Productos/Accesorios/img3.jpg);
-}
-    100%{background: no-repeat center/cover url(../imgs/Productos/Accesorios/img1.jpg);
-}
-}
+            33%{background: no-repeat center/cover url(../imgs/Productos/Accesorios/img2.jpg);
+        }
+            66%{background: no-repeat center/cover url(../imgs/Productos/Accesorios/img3.jpg);
+        }
+            100%{background: no-repeat center/cover url(../imgs/Productos/Accesorios/img1.jpg);
+        }
+        }
 
 .blog {
     display:flex; 
@@ -197,56 +198,56 @@ background-attachment: scroll;
    margin-inline: 2%;
     margin-block: 2%;
 }
-
-.Cotizacion{
-    text-align: center;
-    font-size: large;
-    letter-spacing: 1px;
-    border-radius: 5%;
-    padding: 2% 10% 5% 5%;
-    background-color: #363c2ec8;
-    color: white;
+    .Cotizacion{
+        margin: 15px 0 15px 0;
+        text-align: center;
+        font-size: large;
+        letter-spacing: 1px;
+        border-radius: 5%;
+        padding: 2% 10% 5% 5%;
+        background-color: #565a65d8;
+        color: white;
 }
-.Cotizacion h2, p, pre {
-    text-shadow: 3px 3px 3px#1f2318;
-    color: white;
-    text-align: center;
-    font-weight: bolder;
-    letter-spacing: 1px;
+        .Cotizacion h2, p, pre {
+            text-shadow: 3px 3px 3px#1f2318;
+            color: white;
+            text-align: center;
+            font-weight: bolder;
+            letter-spacing: 1px;
 }
-.Cotizacion input, select {
-    margin: 10px 0 10px 0;
+        .Cotizacion input, select {
+            margin: 10px 0 10px 0;
 } 
+        * select {
+            color: rgb(72, 73, 77);
+            background-color: white;
+            font-size: large;
+            font-weight: bold;
+            height: 30px;
+            text-align: center;
+            }
 
-* select {
-color: #1f2318;
-font-size: large;
-font-weight: bold;
-height: 30px;
-text-align: center;
-}
-
-.btnCotiz {
-    font-size: large;
-    margin-top: 10px;
-    text-align: center;
-    font-weight: bold;
-    color: #363C2E;
-    background-color:white ;
-    border: #66725be6 solid 2px;
-    border-radius: 5px;
-    padding: 10px 50px 10px 50px;
-    height: auto;
-    min-width: min-content;
+        .btnCotiz {
+            font-size: large;
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            background-color:#ffb0e2c7 ;
+            border: #66725be6 none 2px;
+            border-radius: 5px;
+            padding: 10px 50px 10px 50px;
+            height: auto;
+            min-width: min-content;
 
 
 }
 
 .concurso{
-    padding: 0 0 20px 0;
-    margin: 10px 0 10px 0;
-    background-color: #363c2ec8;
-    border-radius: 15px;
+    padding: 0 0 45px 0;
+    margin: 15px 0 10px 0;
+    background-color: #565a65d8;
+    border-radius: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -262,9 +263,10 @@ text-align: center;
 .fotoConcurso {
     
     width: 75vw;
-    border: 5px red ridge;
-    background: no-repeat center/cover url(../imgs/Concurso/rifa.jpg);
-    height: 281px;
+    height: 75vw;
+    border: 8px #dba1d9 ridge;
+    background: center/cover content-box url(../imgs/Concurso/rifa.jpg);
+    
       }
 
 .footer {
@@ -272,14 +274,15 @@ text-align: center;
     display: grid;
     grid-template-areas: 
         'a b c';
-    background-color: #565a65e2 ;
+    background-color: #ffb0e2e0 ;
     height: min-content;
     align-items: center;
     overflow-x: auto;
 }
 
 .botLogo {
-    margin: 10px 10px 10px 10px;
+    padding-right: 25px;
+    margin: 10px 10px 10px 10%;
     grid-area: a;
     height: 100px;
     width: 100px;    
@@ -315,7 +318,7 @@ text-align: center;
         font-size: small;
         padding: 10px;
         text-align: center;
-        background-color: #363C2E;
+        background-color: rgba(255, 255, 255, 0.669);
         border-radius: 5px;
         padding-inline: 10px;
         margin: 2px;
@@ -323,8 +326,9 @@ text-align: center;
 
     a:hover, a:visited, a:link, a:active {
         text-decoration: none;
-        color:white;
-        font-size: small;
+        color:#363C2E;
+        font-size: larger;
+        font-weight: bolder;
 
     }
 
@@ -340,4 +344,39 @@ text-align: center;
         grid-template-areas: 'a b c c'
                             'a b c c'  ;
     }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        background-image: url(/imgs/BGs/BG1.jpg), url(/imgs/BGs/BG2.jpg), url(/imgs/BGs/BG3.jpg);
+        background-position:  0% 0%, 33vw 0%, 66vw 0%;
+        background-size: 33vw , 33vw, 33vw;
+        background-repeat: repeat-y, repeat-y, repeat-y;
+    }
+    
+    .logo, .botLogo {
+        margin-left:30%; 
+    }
+   
+    .topnav {
+        justify-content:space-evenly;
+        }
+
+    .menu > li {
+        width: 20%;
+    }
+
+    .catalogo {
+        flex-direction: row;
+    }
+    .Slider {
+        width: 30vw;
+    }
+    .rrss {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+   .botMenu {
+    justify-content: space-evenly;
+   }
 }
