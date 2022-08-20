@@ -4,7 +4,7 @@ margin: 0;
 padding: 0;
 min-height: max-content;
 background-color: #565a6546 ;
-background-image: src('../imgs/BGs/BG1.jpg'), src('../imgs/BGs/BG2.jpg'), src('../imgs/BGs/BG3.jpg'), src('../imgs/BGs/BG1.jpg'), src('../imgs/BGs/BG2.jpg');
+background-image: url('../imgs/BGs/BG1.jpg'), url('../imgs/BGs/BG2.jpg'), url('../imgs/BGs/BG3.jpg'), url('../imgs/BGs/BG1.jpg'), url('../imgs/BGs/BG2.jpg');
 background-position:  0% 0%, 0% 23%, 0% 50%, 0% 75%, 0% 100%;
 background-size: 100%, 100%, 100%, 100%, 100%;
 background-repeat: no-repeat , no-repeat , no-repeat, no-repeat, no-repeat, no-repeat;
@@ -348,7 +348,7 @@ background-attachment: scroll;
 
 @media screen and (min-width: 900px) {
     body {
-        background-image: src('../imgs/BGs/BG1.jpg'), src('../imgs/BGs/BG2.jpg'), src('../imgs/BGs/BG3.jpg');
+        background-image: url('../imgs/BGs/BG1.jpg'), url('../imgs/BGs/BG2.jpg'), url('../imgs/BGs/BG3.jpg');
         background-position:  0% 0%, 33vw 0%, 66vw 0%;
         background-size: 33vw , 33vw, 33vw;
         background-repeat: repeat-y, repeat-y, repeat-y;
